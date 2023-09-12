@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<div class="first">
+  <table>
+    <td style="text-align:center;" colspan="3">Coordinate Converter (Terra 1 to 1)</td>
+    <tr>  
+      <td><input id="coords" onchange="convertCoord()" placeholder="xx.xxxxxx, zz.zzzzzz"></td>
+      <td><input id="elevation" onchange="convertCoord()" placeholder="Height"></td>
+      <td><input id="userName" onchange="convertCoord()" placeholder="Username"></td>
+    </tr>
+    <tr>
+      <td>Teleport Command:</td>
+    </tr>
+    <tr>
+      <td colspan="3"><input id="teleCommand" style="width:100%; border-style:hidden; background:#F9FFA0; font-size:medium;" readonly></td>
+    </tr>
+    <tr>
+      <td style="width:100%; text-align:center;" colspan="3"><button onclick="copyText()" style="width:50%; background:#C7CD6B; font-size:medium;">Copy Command</button></td>
+    </tr>
+  </table>
+</div>
+<br>
+
+<div class="second">
+  <table>
+    <td style="text-align:center;" colspan="2">Coordinate Converter (Nether and Overworld)</td>
+    <tr>
+      <td>Overworld</td>
+    </tr>
+    <tr>
+      <td><input id="oX" onchange="OverworldNether(0)" placeholder="X"></td>
+      <td><input id="oZ" onchange="OverworldNether(1)" placeholder="Z"></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="width:100%; text-align:center;"><input id="oXZ" onchange="OverworldNether(2)" placeholder="X, Z" style="width:50%;"></td>
+    </tr>
+    <tr>
+      <td>Nether</td>
+    </tr>
+    <tr>
+      <td><input id="nX" onchange="OverworldNether(3)" placeholder="X"></td>
+      <td><input id="nZ" onchange="OverworldNether(4)" placeholder="Z"></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="width:100%; text-align:center;"><input id="nXZ" onchange="OverworldNether(5)" placeholder="X, Z" style="width:50%;"></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="font-size:small;">Note: Y-level does not matter when linking portals</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

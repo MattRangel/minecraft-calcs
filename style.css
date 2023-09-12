@@ -1,0 +1,30 @@
+body {
+  background: #f2f2f2;
+}
+
+table {
+  border-style: outset;
+  text-align:left;
+  width: 100%;
+  table-layout: fixed;
+  font-size: large;
+}
+input {
+  width: 95%;
+  font-size: medium;
+}
+
+div.first table {
+  background: #F9FFA0;
+}
+div.first input {
+  background: #C7CD6B;
+}
+
+div.second table {
+  background: #D0A0FF;
+}
+div.second input {
+  background: #9C6BCD;
+}
+
